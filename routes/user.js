@@ -52,7 +52,7 @@ router.post("/login", async (req, res, next) => {
                 res.json({
                     success: true,
                     data: {
-                        auth_token : jwt.encode(payload, config.SECRET)
+                        auth_token: jwt.encode(payload, config.SECRET)
                     }
                 })
             }
@@ -91,7 +91,7 @@ router.post("/signup", async (req, res, next) => {
             } = body
             createUser(username, password)
             res.json({
-                status:  true,
+                status: true,
                 message: `Success create account for user : ${username} `
             })
         }

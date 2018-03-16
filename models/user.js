@@ -20,7 +20,7 @@ function createUser(username, password) {
         throw new Error(`User ${username}  is exist !`)
     } else {
         const hash = hashPassword(password)
-        db.get(config.DB_PREFIX).push({
+        db.get(config.DB_USER_PREFIX).push({
             id: shortid.generate(),
             username,
             hashPassword: hash
@@ -33,7 +33,7 @@ function createUser(username, password) {
  * @param {*} username 
  */
 function getUser(username) {
-    let user = db.get(config.DB_PREFIX).find(u => u.username === username).value()
+    let user = db.get(config.DB_USER_PREFIX).find(u => u.username === username).value()
     return user
 }
 

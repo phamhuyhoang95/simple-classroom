@@ -1,5 +1,10 @@
 {
   "users": [
-
-  ]
+    {
+      "id": "HyNQFwKYz",
+      "username": "hoangph@goquo.com",
+      "hashPassword": "$2a$05$uU2O3QgFr.DiDpItGQUU0eSKQMvBbTVZIPj4ytSH46CZ7xnPD4qVi"
+    }
+  ],
+  "task":[]
 }
