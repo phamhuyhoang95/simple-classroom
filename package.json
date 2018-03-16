@@ -1,0 +1,33 @@
+{
+  "name": "simple-classroom",
+  "version": "1.0.0",
+  "description": "project for fun",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phamhuyhoang95/simple-classroom.git"
+  },
+  "keywords": [
+    "nodejs",
+    "simple",
+    "curd"
+  ],
+  "author": "phamhuyhoang995@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phamhuyhoang95/simple-classroom/issues"
+  },
+  "homepage": "https://github.com/phamhuyhoang95/simple-classroom#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
+    "jwt-simple": "^0.5.1",
+    "lowdb": "^1.0.0",
+    "moment": "^2.21.0"
+  }
+}
