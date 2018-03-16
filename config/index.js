@@ -1,4 +1,6 @@
 module.exports =  {
     PORT: 3000,
-    SECRET: 'mysimplenodejsapp'
+    SECRET: 'mysimplenodejsapp',
+    DB_PATH: './database/localDB.json',
+    DB_PREFIX: 'users'
 }
