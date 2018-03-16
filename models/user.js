@@ -17,7 +17,7 @@ const {
 function createUser(username, password) {
     const user = getUser(username)
     if (user) {
-        throw new Error("User is exist !")
+        throw new Error(`User ${username}  is exist !`)
     } else {
         const hash = hashPassword(password)
         db.get(config.DB_PREFIX).push({
