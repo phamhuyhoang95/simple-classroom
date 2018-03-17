@@ -47,7 +47,7 @@ router.post("/login", async (req, res, next) => {
                 const payload = {
                     id,
                     username,
-                    expire: moment().add('3', 'days')
+                    expire: moment().add('3', 'days').unix()
                 }
                 res.json({
                     success: true,
@@ -60,7 +60,7 @@ router.post("/login", async (req, res, next) => {
         }
 
     } catch (error) {
-        debug(error.toString())
+        debug(error.message)
         res.status(500).json({
             status: false,
             message: `login failed : ${error.message}`

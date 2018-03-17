@@ -13,4 +13,3 @@ const server = app.listen(config.PORT, function () {
     const port = server.address().port;
     console.log(`Server start at port : => ${port}`)
 });
-
