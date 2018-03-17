@@ -12,3 +12,5 @@ This project make you feel happy when see someone lower grades than you.
 - use real database
 - using config lib
 - docker ?
+- create rank api
+- add automate test api with mocha
